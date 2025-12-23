@@ -1,0 +1,88 @@
+{
+  "configVersion": 1,
+  "timestamp": 1766498200452,
+  "index": "/pwa-project2/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/pwa-project2/favicon.ico",
+        "/pwa-project2/index.html",
+        "/pwa-project2/main-M3DZ2NI2.js",
+        "/pwa-project2/polyfills-B6TNHZQ6.js",
+        "/pwa-project2/styles-36AW6TKX.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "ghibli-api",
+      "patterns": [
+        "https:\\/\\/ghibliapi\\.vercel\\.app\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 50,
+      "maxAge": 604800000,
+      "timeoutMs": 5000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    },
+    {
+      "name": "ghibli-images",
+      "patterns": [
+        "https:\\/\\/(?:.+\\/)?[^/]*\\.(png|jpg|jpeg|svg|webp)"
+      ],
+      "strategy": "performance",
+      "maxSize": 80,
+      "maxAge": 1209600000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/pwa-project2/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/pwa-project2/index.html": "80f356e255db3002e4e12c5d30c60bd795f536c1",
+    "/pwa-project2/main-M3DZ2NI2.js": "efb31b9fc798b34a31d4d95675127aa0d9b1e472",
+    "/pwa-project2/polyfills-B6TNHZQ6.js": "bf76ac291d7f51c1139b7edcf86b359a30c08c64",
+    "/pwa-project2/styles-36AW6TKX.css": "173fa74a40cd51f896da8df76e2a21ac7900097e"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
