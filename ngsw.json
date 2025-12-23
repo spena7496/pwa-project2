@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1766498200452,
+  "timestamp": 1766499028363,
   "index": "/pwa-project2/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/pwa-project2/favicon.ico",
         "/pwa-project2/index.html",
-        "/pwa-project2/main-M3DZ2NI2.js",
+        "/pwa-project2/main-PGVLIZE5.js",
         "/pwa-project2/polyfills-B6TNHZQ6.js",
         "/pwa-project2/styles-36AW6TKX.css"
       ],
@@ -61,8 +61,8 @@
   ],
   "hashTable": {
     "/pwa-project2/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
-    "/pwa-project2/index.html": "80f356e255db3002e4e12c5d30c60bd795f536c1",
-    "/pwa-project2/main-M3DZ2NI2.js": "efb31b9fc798b34a31d4d95675127aa0d9b1e472",
+    "/pwa-project2/index.html": "aca5e5362c8d5b64a9473e9ae97b713ed07ce0e6",
+    "/pwa-project2/main-PGVLIZE5.js": "b33b2dbe867758c11632765cb2a55f05cd9e2a13",
     "/pwa-project2/polyfills-B6TNHZQ6.js": "bf76ac291d7f51c1139b7edcf86b359a30c08c64",
     "/pwa-project2/styles-36AW6TKX.css": "173fa74a40cd51f896da8df76e2a21ac7900097e"
   },
