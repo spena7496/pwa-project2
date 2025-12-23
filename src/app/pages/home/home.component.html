@@ -1,0 +1,26 @@
+<div class="topbar">
+  <div class="spacer"></div>
+
+  <div class="controls">
+    <button mat-button (click)="setMode('cards')">Cards</button>
+    <button mat-button (click)="setMode('table')">Table</button>
+  </div>
+</div>
+
+@if (loading) {
+<div class="center">
+  <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+</div>
+} @else { @if (viewMode === 'cards') {
+<div class="cards" @listAnim>
+  @for (film of films; track film.id) {
+  <div class="anim-item">
+    <app-base-card [film]="film" (select)="goDetail($event)"></app-base-card>
+  </div>
+  }
+</div>
+} @else {
+<div class="anim-item" @listAnim>
+  <app-base-grid [films]="films" (select)="goDetail($event)"></app-base-grid>
+</div>
+} }

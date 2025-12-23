@@ -1,0 +1,41 @@
+{
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": ["/favicon.ico", "/index.html", "/*.css", "/*.js"]
+      }
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": ["/assets/**"]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "ghibli-api",
+      "urls": ["https://ghibliapi.vercel.app/**"],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 50,
+        "maxAge": "7d",
+        "timeout": "5s"
+      }
+    },
+    {
+      "name": "ghibli-images",
+      "urls": ["https://**/*.(png|jpg|jpeg|svg|webp)"],
+      "cacheConfig": {
+        "strategy": "performance",
+        "maxSize": 80,
+        "maxAge": "14d"
+      }
+    }
+  ]
+}

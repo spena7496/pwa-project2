@@ -1,0 +1,30 @@
+@if (film) {
+<div class="header">
+  <h1>{{ film.title }}</h1>
+
+  <div class="actions">
+    <button mat-button (click)="back()">Back</button>
+    <button mat-button (click)="toggleAll()">Show all details</button>
+  </div>
+</div>
+
+<img class="banner" [src]="film.movie_banner" [alt]="film.title" />
+
+@if (showAll) {
+<mat-accordion>
+  <mat-expansion-panel expanded="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>Details</mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <div class="details">
+      <div><b>Director:</b> {{ film.director }}</div>
+      <div><b>Producer:</b> {{ film.producer }}</div>
+      <div><b>Release year:</b> {{ film.release_date }}</div>
+      <div><b>Running time:</b> {{ film.running_time }} min</div>
+      <div><b>RT score:</b> {{ film.rt_score }}</div>
+      <div><b>Description:</b> {{ film.description }}</div>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>
+} }

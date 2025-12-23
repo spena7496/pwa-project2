@@ -1,0 +1,27 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+}
+
+.center {
+  height: 60vh;
+  display: grid;
+  place-items: center;
+}
+
+.cards {
+  padding: 12px;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
